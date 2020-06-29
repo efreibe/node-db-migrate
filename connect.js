@@ -56,7 +56,7 @@ exports.connect = function (config, PassedClass) {
                 null,
                 new PassedClass(
                   db,
-                  internals.argv['migrations-dir'] + '/' + internals.locTitle,
+                  internals.argv['migrations-dir'],
                   internals.mode !== 'static',
                   internals,
                   prefix
@@ -69,7 +69,7 @@ exports.connect = function (config, PassedClass) {
               null,
               new PassedClass(
                 db,
-                internals.argv['migrations-dir'] + '/' + internals.locTitle,
+                internals.argv['migrations-dir'],
                 internals.mode !== 'static',
                 internals,
                 prefix
