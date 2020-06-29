@@ -15,7 +15,7 @@ lab.experiment('migrators', function () {
       };
       const Migrator = proxyquire('../lib/walker.js', {
         './file.js': {
-          loadFromFileystem: (migrationsDir, prefix, internals) => {
+          loadFromFileSystem: (migrationsDir, prefix, internals) => {
             return Promise.resolve([uncompletedMigration]);
           },
           loadFromDatabase: (migrationsDir, prefix, driver, internals) => {
